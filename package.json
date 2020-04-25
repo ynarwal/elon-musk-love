@@ -9,6 +9,9 @@
   "author": "Ahn Dohyung",
   "license": "MIT",
   "main": "src/index.tsx",
+  "browserslist": [
+    "last 1 Chrome versions"
+  ],
   "scripts": {
     "develop": "concurrently -r \"npm:type-check:watch\" \"npm:start\"",
     "start": "parcel ./src/index.html",
@@ -51,8 +54,10 @@
     "Parcel"
   ],
   "dependencies": {
+    "@types/react-google-recaptcha": "^1.1.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-google-recaptcha": "^2.0.1"
   },
   "devDependencies": {
     "@types/jest": "^24.0.11",
@@ -68,6 +73,7 @@
     "prettier": "^1.17.0",
     "react-test-renderer": "^16.8.6",
     "react-testing-library": "^6.1.2",
+    "sass": "^1.26.5",
     "ts-jest": "^24.0.2",
     "tslint": "^5.16.0",
     "tslint-config-airbnb": "^5.11.1",

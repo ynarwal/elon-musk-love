@@ -4,6 +4,8 @@
   box-sizing: inherit;
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
+$bg-color: #333;
+$bl-color: #22BAD9;
 
 html, body {
   height: 100%;
@@ -51,4 +53,21 @@ html, body {
   margin-top: 20px;
   border-radius: 15px;
   background-color: #F3D675;
+}
+.TypistExample {
+
+  a {
+    color: inherit;
+    &:hover {
+      background-color: $bl-color;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  &-header {
+    text-align: center;
+    font-size: 3em;
+    cursor: pointer;
+    color: $bl-color;
+  }
 }
